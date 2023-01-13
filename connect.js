@@ -1,18 +1,18 @@
 const express = require("express");
 const mysql = require("mysql");
-
+// var con = mysql.create()
 const app = express();
 const port = 3005;
 
-const connection = mysql.createConnection({
+var conn = mysql.createConnection({
     connectionLimit: 7,
     host: "localhost",
     user: "root",
-    password: "",
+    password: "hh",
     database: "todoapp",
 });
 
-connection.connect(function(err) {
+conn.connect(function(err) {
     if (err) {
         return console.error("error: " + err.message);
     } else {
