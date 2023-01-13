@@ -9,8 +9,8 @@ const users = [];
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-    res.send("Hello, World!");
+app.get("/customer", (req, res) => {
+    res.send("Hello");
 });
 app.post("register", async(req, res) => {
     try {

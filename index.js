@@ -10,7 +10,7 @@ app.get("/token", (res, req) => {
         name: "Tony"
     };
     const token = jwt.sign(payload, "super secret key");
-    res.send(token);
+    // res.send(token);
 });
 // app.get("/", (res, req) => {
 //     res.send("Hello")
@@ -20,7 +20,8 @@ app.get("/customer", (req, res) => {
     res.send("Hello, World!");
 });
 
-app.post("/login", async(res, req) => {
-    try {} catch (error) {}
+app.post("/login", (res, req) => {
+    res.send("Hello");
+    // try {} catch (error) {}
 });
 app.listen(port, () => console.log(`app running on http://127.0.0.1:${port}`));
