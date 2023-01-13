@@ -10,7 +10,7 @@ app.get("/token", (res, req) => {
         name: "Tony"
     };
     const token = jwt.sign(payload, "super secret key");
-    // res.send(token);
+    res.send(token);
 });
 app.get("/", (res, req) => {
     res.send("Hello")
