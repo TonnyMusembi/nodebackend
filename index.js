@@ -28,6 +28,6 @@ app.post("/", (res, req) => {
 
 app.post("/login", (res, req) => {
     res.send("Hello");
-    // try {} catch (error) {}
+
 });
 app.listen(port, () => console.log(`app running on http://127.0.0.1:${port}`));
