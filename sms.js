@@ -28,6 +28,10 @@ app.post("/ussd", (req, res) => {
         const amount = text.split("*")[1];
         const response = `END You have topped up KES ${amount}. Your new balance is KES XXXXXX`;
         res.send(response);
+    } else
+    if (text === '0') {
+        const response = `Error`
+
     } else {
         res.status(400).send("Bad request!");
     }
