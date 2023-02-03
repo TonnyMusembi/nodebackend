@@ -39,4 +39,5 @@ app.post("/ussd", (req, res) => {
 
 app.listen(3007, () => {
     console.log("Server started on port 3007");
+    // console.log(port);
 });
